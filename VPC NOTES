@@ -1,0 +1,10 @@
+VPC NOTES
+
+One subnet equalls to one avalibility zone.
+By default, AWS allow 5 VPCs per region.
+VPC Flow Logs can be created at the VPC, subnet, and network interface levels.
+You may have only one Internet Gateway per VPC.
+You may peer a VPC to another VPC that’s in your same account, or to any VPC in any other account.
+When you create a custom VPC, a default Security Group, Access control List, and Route Table are created automaticaly. You must create your own subnets, Internet Gateway, and NAT Gateway (if you need one.)
+???A Bastion host allows you to securely administer (via SSH or RDP) an EC2 instance located in a private subnet. Don’t confuse Bastions and NATs, which allow outside traffic to reach an instance in a private subnet.???
+Security Groups are stateful and Network Access Control Lists are stateless.
